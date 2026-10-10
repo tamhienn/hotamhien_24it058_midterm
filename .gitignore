@@ -1,0 +1,7 @@
+*.o
+myls
+a.out
+*.core
+core
+*.swp
+*~
