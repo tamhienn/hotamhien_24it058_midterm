@@ -28,6 +28,7 @@ void parse_options(int argc, char **argv, int *first_operand)
             break;
         case 'f':
             options.unsorted = 1;
+            options.all = 1;
             break;
         case 'h':
             options.human = 1;

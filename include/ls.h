@@ -43,6 +43,17 @@ void list_directory(const char *path, int show_header);
 
 void sort_entries(FileEntry *entries, size_t count);
 
+typedef struct {
+    int links;
+    int owner;
+    int group;
+    int size;
+    int inode;
+    int blocks;
+} ColumnWidths;
+
+void calculate_widths(const FileEntry *entries, size_t count);
+
 void print_entry(const FileEntry *entry);
 void print_total(const FileEntry *entries, size_t count);
 
